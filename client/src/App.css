@@ -1,8 +1,16 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  /* max-width: 1280px; */
+  /* Center the content */
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
   text-align: center;
+}
+
+header {
+  /* max-width: 1300px; */
+  padding-left: 25px;
+  padding-right:25px;
+  margin: auto;
 }
 
 .logo {
