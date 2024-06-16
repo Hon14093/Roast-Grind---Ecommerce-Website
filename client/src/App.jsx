@@ -10,9 +10,11 @@ function App() {
   return (
     <>
       <div className='text-black'>
-        <header>
+        
+        
           <Header />
-        </header>
+        
+        
 
         <main>
           <HomeMain />

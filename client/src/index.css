@@ -70,6 +70,42 @@ button:focus-visible {
 header {
   /* width: 100%; */
   font-family: Courier Prime, Courier, monospace;
+  padding-left: 25px;
+  padding-right:25px;
+  margin: auto;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hiddenTrans {
+  animation: hideHeader 0.3s forwards;
+}
+
+.visibleTrans {
+  animation: showHeader 0.3s forwards;
+}
+
+@keyframes hideHeader {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes showHeader {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 .navList {
@@ -78,6 +114,42 @@ header {
 
 .navAnchor {
   @apply bg-left-bottom bg-gradient-to-r from-brown to-brown bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:50%_2px] transition-all duration-500 ease-out font-bold hover:text-brown;
+}
+
+#imageBG {
+  /* background-image: url(images/coffee.jpg); */
+  background-image: linear-gradient(rgb(0,0,0, .5), rgb(0,0,0, .5) ), url(images/coffee.jpg);
+  background-size: cover;
+  height: 100vh;
+  position: absolute;
+  opacity: 1;
+  transform: none;
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+#contentWrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-brown;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primaryBlue;
+  border-radius: 100vw;
 }
 
 @tailwind base;
