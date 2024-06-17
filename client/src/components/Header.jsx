@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../images/logoWhite.png'
+import logoWhite from '../images/white.png'
+import logoBlack from '../images/orange.png'
 
 function Header() {
     const [scrollDirection, setScrollDirection] = useState(null);
@@ -16,21 +17,35 @@ function Header() {
             } else {
                 setScrollDirection('up');
             }
+
+            if (window.scrollY === 0) {
+                setIsTop(true);
+            } else {
+                setIsTop(false);
+            }
     
             setLastScrollTop(scrollTop);
         };
     
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
+
     }, [lastScrollTop]);
 
     return (
-        <header className={`${scrollDirection === 'down' ? 'hiddenTrans' : 'visibleTrans'}`}>
-            <div className='flex gap-4 justify-between items-center p-2 relative font-bold text-white'>
+        <header className={
+            `${scrollDirection === 'down' ? 'hiddenTrans' : 'visibleTrans'}
+            ${isTop ? 'clearBG' : 'coloredBG'}`
+        }>
+            <div className='flex gap-4 justify-between items-center p-4 relative font-bold'>
+                {/* logo section */}
                 <section>
-                    <img src={logo} className='w-24' />
+                    <a href="/">
+                        <img src={`${isTop ? logoWhite : logoBlack}`} className='w-24' />
+                    </a>
                 </section>
 
+                {/* navigation section */}
                 <section className='absolute left-1/2 transform -translate-x-1/2 font-bold'>
                     <ul className='flex gap-8'>
                         <li className='navList group'>
@@ -48,6 +63,7 @@ function Header() {
                     </ul>
                 </section>
 
+                {/* account and cart section */}
                 <section className='flex items-center gap-4 text-black'>
                     <button href="/" className='p-2 bg-white rounded-full'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -56,9 +72,9 @@ function Header() {
 
                     </button>
 
-                    <button className='p-2 bg-white rounded-full flex gap-1 items-center'>
+                    <button className='group p-2 bg-white rounded-full flex gap-1 items-center'>
                         <p className='px-1'>Cart</p>
-                        <p className='rounded-full border-black border size-6'> 0 </p>
+                        <p className=" border-[1.5px] rounded-full size-6 border-black group-hover:border-white">0</p>
                     </button>
                 </section>
 

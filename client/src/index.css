@@ -36,6 +36,10 @@ h1 {
 }
 
 button {
+  @apply hover:bg-brown hover:text-white transition-colors duration-200;
+}
+
+/* button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -48,11 +52,12 @@ button {
 }
 button:hover {
   border-color: #646cff;
+  
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -79,15 +84,25 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, background-color 0.3s;
 }
 
 .hiddenTrans {
-  animation: hideHeader 0.3s forwards;
+  animation: hideHeader 0.4s forwards;
 }
 
 .visibleTrans {
-  animation: showHeader 0.3s forwards;
+  animation: showHeader 0.4s forwards;
+}
+
+.clearBG {
+  background-color: transparent;
+  color: white;
+}
+
+.coloredBG {
+  background-color: #ede8e1;
+  color: black;
 }
 
 @keyframes hideHeader {
@@ -109,11 +124,19 @@ header {
 }
 
 .navList {
-  @apply transition-all duration-300 ease-in-out;
+  @apply transition-all duration-300 ease-in-out cursor-pointer;
 }
 
+/* .navAnchor {
+  @apply bg-left-bottom bg-gradient-to-r from-brown to-brown bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:50%_2px] transition-all duration-500 ease-out font-bold hover:text-brown ;
+} */
+
 .navAnchor {
-  @apply bg-left-bottom bg-gradient-to-r from-brown to-brown bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:50%_2px] transition-all duration-500 ease-out font-bold hover:text-brown;
+  @apply transition-all duration-500 ease-out font-bold ;
+}
+
+.navAnchor:hover{
+  @apply p-3 bg-white rounded-full text-brown ;
 }
 
 #imageBG {
@@ -132,11 +155,12 @@ header {
   padding: 0;
 }
 
-#contentWrapper {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
-  width: 100%;
+.font-courier {
+  font-family: Courier Prime, Courier, monospace;
+}
+
+.font-serifs {
+  font-family: Self Modern, serif;
 }
 
 ::-webkit-scrollbar {
