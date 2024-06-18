@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import HomeMain from './components/HomeMain'
+import HomeMain from './pages/HomeMain'
 
 function App() {
   const [count, setCount] = useState(0)
