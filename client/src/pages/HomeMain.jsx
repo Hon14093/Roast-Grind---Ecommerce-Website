@@ -10,32 +10,39 @@ function HomeMain() {
                     <div id="imageBG"></div>
 
                     <div className='absolute inset-0 flex flex-col justify-end p-10 content-start flex-wrap text-left gap-4'>
-                        <div className='sticky bottom-0 text-white flex flex-col font-serifs uppercase font-extralight'>
-                            <span className='font-courier leading-[18px]'>Roast & Grind</span>
-                            <span className='text-[48px] leading-[60px]'>
-                                BREW PERFECTION,
-                            </span>
-                            <span className='text-[48px] leading-[60px]'>
-                                ONE BEAN AT A TIME
-                            </span>
-                        </div>
 
-                        <div className='flex justify-between w-full'>
-                            <a href='/' className='rounded-xl bg-bgColor h-14 w-64 font-courier uppercase flex flex-wrap justify-center content-center'>
-                                Take a look 
-                            </a>
+                        <div className='sticky bottom-0 grid grid-cols-2 font-serifs uppercase font-extralight w-full'>
+                            <div className='text-white flex flex-col'>
+                                <span className='font-courier leading-[18px]'>Roast & Grind</span>
+                                <span className='text-[48px] leading-[60px]'>
+                                    BREW PERFECTION,
+                                </span>
+                                <span className='text-[48px] leading-[60px]'>
+                                    ONE BEAN AT A TIME
+                                </span>
 
-                            {/* <button href='' className='rounded-xl bg-bgColor h-14 w-64 font-courier uppercase'>
-                                Take a look 
-                            </button> */}
+                                <div className='h-full self-start text-black items-start bg-bgColor rounded-xl uppercase'>
+                                    <a href='/' className='rounded-xl h-14 w-60 font-courier flex flex-wrap justify-center content-center hover:text-white hover:bg-brown transition-all duration-300'>
+                                        Take a look 
+                                    </a>
+                                </div>
+                            </div>
 
-                            <div href='/' className='rounded-xl bg-bgColor h-14 w-64 font-courier uppercase flex flex-wrap justify-center content-center'>
+                            <div href='/' className='rounded-xl bg-bgColor h-20 w-80 font-courier self-end justify-self-end'>
                                 <Carousel leftControl=' ' rightControl=' ' indicators={false}>
-                                    <span className='flex h-full items-center justify-center'>Hello</span>
-                                    <span className='flex h-full items-center justify-center'>Goodbye</span>
+                                    <span className='flex flex-col items-start justify-center px-4'>
+                                        <div className='font-bold'>Free shipping for $50 order</div>
+                                        <div>Shop now</div>
+                                    </span>
+                                    <span className='flex flex-col items-start justify-center px-4'>
+                                        <div className='font-bold'>Goodbye</div>
+                                        <div>See you later</div>
+                                    </span>
                                 </Carousel>
                             </div>
                         </div>
+
+                        
 
                     </div>
                 </div>
