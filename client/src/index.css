@@ -3,14 +3,14 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  /* color-scheme: light dark; */
   /* color: rgba(255, 255, 255, 0.87); */
   background-color: #ede8e1;
 
-  font-synthesis: none;
+  /* font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
 }
 
 a {
@@ -36,7 +36,7 @@ h1 {
 }
 
 button {
-  @apply hover:bg-brown hover:text-white transition-colors duration-200;
+  @apply hover:bg-brown hover:text-bgColor transition-colors duration-200;
 }
 
 /* button {
@@ -163,6 +163,30 @@ header {
   font-family: Self Modern, serif;
 }
 
+input[type='email'], input[type='password'] {
+  background: none;
+  border: 1px solid #ede8e1;
+  border-radius: 8px;
+  color: #ede8e1;
+  font-family: Courier Prime, Courier, monospace;
+  font-size: 14px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  @apply placeholder-bgColor focus:outline-none focus:ring-bgColor focus:border-bgColor
+}
+
+.button {
+  background: #ede8e1;
+  border: 1px solid #ede8e1;
+  border-radius: 8px;
+  font-family: Courier Prime, Courier, monospace;
+  font-size: 14px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  @apply focus:outline-none focus:ring-bgColor focus:border-bgColor hover:bg-loginPageGreen
+}
 
 ::-webkit-scrollbar {
   width: 5px;

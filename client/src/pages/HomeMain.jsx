@@ -5,9 +5,10 @@ function HomeMain() {
     return (
         <>
         <section className='bg-blue-300 w-full relative'>
+
             <article className='relative'>
                 <div className='overflow-hidden min-h-[500px] h-[100vh] relative' >
-                    <div id="imageBG"></div>
+                    <div id="imageBG"></div> {/* why does this work??? */}
 
                     <div className='absolute inset-0 flex flex-col justify-end p-10 content-start flex-wrap text-left gap-4'>
 
@@ -62,17 +63,16 @@ function HomeMain() {
                 <div className='relative z-[1] h-[200vh] font-serif text-[48px]'>
                     BREW PERFECTION,
                     <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
-                    <Carousel>
-                        <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" alt="..." />
-                        <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" alt="..." />
-                        <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
-                    </Carousel>
-                </div>
+                        <Carousel>
+                            <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" alt="..." />
+                            <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" alt="..." />
+                            <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
+                        </Carousel>
+                    </div>
                 </div>
 
                 
             </article>
-
             
         </section>
         </>

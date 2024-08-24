@@ -1,4 +1,7 @@
 import React from 'react'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import LoginBody from '../components/LoginBody'
 
 function LoginPage() {
     return (
@@ -8,7 +11,7 @@ function LoginPage() {
                 <Header />
 
                 <main>
-                fuck you
+                <LoginBody />
                 </main>
 
                 <footer>

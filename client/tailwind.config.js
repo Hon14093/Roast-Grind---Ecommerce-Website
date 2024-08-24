@@ -13,7 +13,8 @@ export default {
       colors: {
         primaryBlue: '#01627F',
         brown: '#9F6243',
-        bgColor: '#ede8e1'
+        bgColor: '#ede8e1',
+        loginPageGreen: '#2d392a'
       }
     },
   },
