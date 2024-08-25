@@ -1,8 +1,8 @@
 import React from 'react'
 import Header from '../components/Header'
-import LoginBody from '../components/LoginBody'
+import SignupBody from '../components/SignupBody'
 
-function LoginPage() {
+function SignupPage() {
     return (
         <>
             <div className='text-black'>
@@ -10,7 +10,7 @@ function LoginPage() {
                 <Header />
 
                 <main>
-                <LoginBody />
+                <SignupBody />
                 </main>
 
             </div>
@@ -19,4 +19,4 @@ function LoginPage() {
     )
 }
 
-export default LoginPage
+export default SignupPage

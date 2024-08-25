@@ -155,6 +155,22 @@ header {
   padding: 0;
 }
 
+#loginBG {
+  /* background-image: url(images/coffee.jpg); */
+  background-image: linear-gradient(rgb(0,0,0, .5), rgb(0,0,0, .5) ), url(images/loginBG.jpeg);
+  background-size: cover;
+  height: 100vh;
+  /* position: absolute; */
+  opacity: 1;
+  transform: none;
+  /* width:100%; */
+  /* height: 100%; */
+  /* object-fit: cover; */
+  /* object-position: center; */
+  margin: 0;
+  padding: 0;
+}
+
 .font-courier {
   font-family: Courier Prime, Courier, monospace;
 }
@@ -163,7 +179,7 @@ header {
   font-family: Self Modern, serif;
 }
 
-input[type='email'], input[type='password'] {
+input[type='email'], input[type='password'], .input-primary {
   background: none;
   border: 1px solid #ede8e1;
   border-radius: 8px;
