@@ -14,8 +14,8 @@ export default {
         primaryBlue: '#01627F',
         brown: '#9F6243',
         bgColor: '#ede8e1',
-        loginPageGreen: '#2d392a'
-      }
+        primaryGreen: '#2f432b'
+      },
     },
   },
   plugins: [

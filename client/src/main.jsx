@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import LoginPage from './pages/LoginPage.jsx'
 import SignupPage from './pages/SignupPage.jsx'
+import AboutUsPage from './pages/AboutUsPage.jsx'
 import './index.css'
 
 import {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "Signup",
     element: <SignupPage />
+  },
+  {
+    path: "AboutUs",
+    element: <AboutUsPage />
   }
 ])
 

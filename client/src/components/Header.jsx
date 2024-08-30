@@ -51,7 +51,9 @@ function Header() {
                             <a className='navAnchor'>Shop</a>
                         </li>
                         <li className='navList group'>
-                            <a className='navAnchor'>About Us</a>
+                            <Link to="/AboutUs">
+                                <a className='navAnchor'>About Us</a>
+                            </Link>
                         </li>
                         <li className='navList group'>
                             <a className='navAnchor'>Contact</a>

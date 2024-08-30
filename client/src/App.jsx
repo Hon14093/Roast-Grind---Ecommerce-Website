@@ -3,6 +3,7 @@ import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import HomeMain from './pages/HomeMain'
+import FooterTest from './components/FooterTest'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,9 +18,8 @@ function App() {
           <HomeMain />
         </main>
 
-        <footer>
-          <Footer />
-        </footer>
+        <Footer />
+        
       </div>
       
     </>

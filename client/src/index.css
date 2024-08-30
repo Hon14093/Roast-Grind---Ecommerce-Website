@@ -201,7 +201,7 @@ input[type='email'], input[type='password'], .input-primary {
   height: 50px;
   line-height: 50px;
   padding: 0 20px;
-  @apply focus:outline-none focus:ring-bgColor focus:border-bgColor hover:bg-loginPageGreen
+  @apply focus:outline-none focus:ring-bgColor focus:border-bgColor hover:bg-primaryGreen
 }
 
 ::-webkit-scrollbar {
