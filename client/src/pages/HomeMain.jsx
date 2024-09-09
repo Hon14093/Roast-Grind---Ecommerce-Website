@@ -8,7 +8,7 @@ function HomeMain() {
 
             <article className='relative'>
                 <div className='overflow-hidden min-h-[500px] h-[100vh] relative' >
-                    <div id="imageBG"></div> {/* why does this work??? */}
+                    <div id="imageBG"></div> 
 
                     <div className='absolute inset-0 flex flex-col justify-end p-10 content-start flex-wrap text-left gap-4'>
 
