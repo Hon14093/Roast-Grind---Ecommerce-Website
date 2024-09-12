@@ -36,7 +36,7 @@ h1 {
 }
 
 button {
-  @apply hover:bg-brown hover:text-bgColor transition-colors duration-200;
+  @apply hover:bg-brown hover:text-ivory transition-colors duration-200;
 }
 
 /* button {
@@ -189,7 +189,7 @@ input[type='email'], input[type='password'], .input-primary {
   height: 50px;
   line-height: 50px;
   padding: 0 20px;
-  @apply placeholder-bgColor focus:outline-none focus:ring-bgColor focus:border-bgColor
+  @apply placeholder-ivory focus:outline-none focus:ring-ivory focus:border-ivory
 }
 
 .button {
@@ -201,7 +201,7 @@ input[type='email'], input[type='password'], .input-primary {
   height: 50px;
   line-height: 50px;
   padding: 0 20px;
-  @apply focus:outline-none focus:ring-bgColor focus:border-bgColor hover:bg-primaryGreen
+  @apply focus:outline-none focus:ring-ivory focus:border-ivory hover:bg-darkOlive
 }
 
 ::-webkit-scrollbar {
@@ -209,11 +209,11 @@ input[type='email'], input[type='password'], .input-primary {
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-brown;
+  @apply bg-brownSugar;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-primaryBlue;
+  @apply bg-tealBlue;
   border-radius: 100vw;
 }
 

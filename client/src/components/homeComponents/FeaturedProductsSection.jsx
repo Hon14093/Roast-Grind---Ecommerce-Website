@@ -1,4 +1,6 @@
 import React from 'react'
+import logoWhite from '../../images/white.png'
+import lumiCoffee from '../../images/Lumi.png'
 
 function FeaturedProductsSection() {
     return (
@@ -13,19 +15,19 @@ function FeaturedProductsSection() {
             </div>   */}
             
 
-            <div class="text-primaryGreen body-font">
+            <div class="text-darkOlive body-font">
                 <div class="container px-5 py-24 mx-auto">
                     <div class="flex flex-wrap -m-4">
 
                         
-                        <div class="p-4 md:w-1/3">
-                            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                        <div class="p-4 md:w-1/3 hover:bg-brownSugar duration-300">
+                            <div class="h-full border-2 border-darkOlive border-opacity-60 rounded-lg overflow-hidden">
                                 {/* <img class="lg:h-48 md:h-48 h-full w-full object-cover object-center" src="https://cdn.sanity.io/images/4t60hegj/production/64372ed7017bd8e771bcd3fe2568299b94838b5b-3000x3000.png?auto=format&q=75&url=https://cdn.sanity.io/images/4t60hegj/production/64372ed7017bd8e771bcd3fe2568299b94838b5b-3000x3000.png&w=1400" alt="blog"/> */}
 
-                                <img className='w-full object-cover object-center' src="https://cdn.sanity.io/images/4t60hegj/production/64372ed7017bd8e771bcd3fe2568299b94838b5b-3000x3000.png?auto=format&q=75&url=https://cdn.sanity.io/images/4t60hegj/production/64372ed7017bd8e771bcd3fe2568299b94838b5b-3000x3000.png&w=1400" alt="" />
+                                <img className='w-full object-cover object-center ' src="https://cdn.sanity.io/images/4t60hegj/production/64372ed7017bd8e771bcd3fe2568299b94838b5b-3000x3000.png?auto=format&q=75&url=https://cdn.sanity.io/images/4t60hegj/production/64372ed7017bd8e771bcd3fe2568299b94838b5b-3000x3000.png&w=1400" alt="" />
 
-                                <div class="p-6">
-                                    <h1 class="font-serifs text-lg text-center mb-3">The Catalyzer</h1>
+                                <div class="p-6 bg-darkOlive text-ivory">
+                                    <h1 class="font-serifs text-2xl text-center mb-3">The Catalyzer</h1>
                                     
                                 </div>
                             </div>
@@ -34,7 +36,8 @@ function FeaturedProductsSection() {
                         <div class="p-4 md:w-1/3">
                             <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
 
-                                <img className='w-full object-cover object-center' src="https://cdn.sanity.io/images/4t60hegj/production/64372ed7017bd8e771bcd3fe2568299b94838b5b-3000x3000.png?auto=format&q=75&url=https://cdn.sanity.io/images/4t60hegj/production/64372ed7017bd8e771bcd3fe2568299b94838b5b-3000x3000.png&w=1400" alt="" />
+                                {/* <img className='w-full  object-center' src="https://shop.phase-connect.com/cdn/shop/files/luminewcoffee_1776x1184.png?v=1715241054" alt="" /> */}
+                                <img src={lumiCoffee} alt="" />
 
                                 <div class="p-6">
                                     <h1 class="font-serifs text-lg text-center mb-3">The Catalyzer</h1>
