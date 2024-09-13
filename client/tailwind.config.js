@@ -20,7 +20,11 @@ export default {
         brownSugar: '#9F6243',
         ivory: '#ede8e1',
         darkOlive: '#2f432b',
+        crimsonRed: '#780c17',
       },
+      fontFamily: {
+        greatVibes: ['Great Vibes', 'cursive'],
+      }
     },
   },
   plugins: [

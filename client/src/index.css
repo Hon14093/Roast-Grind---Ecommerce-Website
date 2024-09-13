@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -35,8 +37,8 @@ h1 {
   line-height: 1.1;
 }
 
-button {
-  @apply hover:bg-brown hover:text-ivory transition-colors duration-200;
+.top-right-button {
+  @apply hover:bg-brown hover:text-ivory transition-colors duration-300;
 }
 
 /* button {
@@ -189,7 +191,7 @@ input[type='email'], input[type='password'], .input-primary {
   height: 50px;
   line-height: 50px;
   padding: 0 20px;
-  @apply placeholder-ivory focus:outline-none focus:ring-ivory focus:border-ivory
+  @apply placeholder-ivory focus:outline-none focus:ring-ivory focus:border-ivory duration-300
 }
 
 .button {
@@ -201,7 +203,23 @@ input[type='email'], input[type='password'], .input-primary {
   height: 50px;
   line-height: 50px;
   padding: 0 20px;
-  @apply focus:outline-none focus:ring-ivory focus:border-ivory hover:bg-darkOlive
+  @apply focus:outline-none focus:ring-ivory focus:border-ivory hover:bg-darkOlive duration-300
+}
+
+.big-action-button {
+  background: #780c17;
+  border: 2px solid #780c17;
+  border-radius: 15px;
+  font-family: Courier Prime, Courier, monospace;
+  font-size: 14px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  @apply focus:outline-none hover:bg-ivory hover:text-crimsonRed hover:border-crimsonRed duration-300
+}
+
+.poping-out-card {
+  @apply transform transition-transform duration-300 ease-in-out hover:scale-105;
 }
 
 ::-webkit-scrollbar {

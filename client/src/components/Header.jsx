@@ -73,7 +73,7 @@ function Header() {
 
                     </Link>
 
-                    <button to="/Login" className='group p-2 bg-ivory rounded-full flex gap-1 items-center'>
+                    <button to="/Login" className='group top-right-button p-2 bg-ivory rounded-full flex gap-1 items-center'>
                         <p className='px-1'>Cart</p>
                         <p className=" border-[1.5px] rounded-full size-6 border-darkOlive group-hover:border-ivory">0</p>
                     </button>

@@ -1,6 +1,7 @@
 import React from 'react'
 import HeroSection from '../components/homeComponents/HeroSection'
 import FeaturedProductsSection from '../components/homeComponents/FeaturedProductsSection'
+import StorySection from '../components/homeComponents/StorySection'
 
 function HomeMain() {
     return (
@@ -10,6 +11,8 @@ function HomeMain() {
             <HeroSection />
 
             <FeaturedProductsSection />
+
+            <StorySection />
 
             {/* Reviews Section ? */}
             <article>
