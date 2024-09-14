@@ -222,6 +222,44 @@ input[type='email'], input[type='password'], .input-primary {
   @apply transform transition-transform duration-300 ease-in-out hover:scale-105;
 }
 
+.ribbon-heading {
+  position: relative;
+  margin: 0 auto 20px;
+  padding: 10px 40px;
+  text-align: center;
+  @apply bg-darkOlive w-fit pt-7 pb-3 px-12 rounded-t-xl;
+}
+
+/* Two darker shades of dark olive are #1f3323 and #0f2313 */
+.ribbon-heading::before, .ribbon-heading::after {
+  content: '';
+  width: 130px;
+  height: 100%;
+  background-color: #1f3323;
+
+  position: absolute;
+  z-index: -1;
+  top: 20px;
+
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 35% 50%);
+
+  /* draw and position the folded ribbon bit */
+  background-image: linear-gradient(45deg, transparent 50%, #0f2313 50%);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  border-bottom-right-radius: 12px;
+}
+
+.ribbon-heading::before {
+  left: -110px;
+}
+
+.ribbon-heading::after {
+  right: -110px;
+  transform: scaleX(-1);
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }

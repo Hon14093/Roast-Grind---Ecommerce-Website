@@ -15,14 +15,18 @@ function FeaturedProductsSection() {
             </div>   */}
             
 
-            <div class="text-darkOlive body-font">
+            <div class="text-ivory body-font">
 
-                <div className='text-center pt-14 text-7xl font-greatVibes italic'>
-                    <div className="h-1 w-16 bg-yellow-500 mr-4 text-center"></div>
-                    <h1>
+                <div className='pt-14'>
+                    
+                    {/* <h1 className='pt-7 pb-2 px-12 text-7xl font-greatVibes italic w-fit mx-auto rounded-3xl bg-darkOlive'>
                         Featured Products 
+                    </h1> */}
+                    
+                    <h1 className='ribbon-heading font-greatVibes italic text-7xl'>
+                        Featured Products
                     </h1>
-                    <div className="h-1 w-16 bg-yellow-500 ml-4"></div>
+
                 </div>
 
                 
@@ -30,16 +34,18 @@ function FeaturedProductsSection() {
 
                 <div class="container px-5 pb-20 pt-8 mx-auto">
                     <div class="flex flex-wrap -m-4">
-
                         
                         <div class="p-4 md:w-1/3">
                             <div class="h-full border-2 border-darkOlive border-opacity-60 rounded-3xl overflow-hidden poping-out-card bg-darkOlive">
                                 <img className='w-full object-cover object-center rounded-b-md' src="https://cdn.sanity.io/images/4t60hegj/production/64372ed7017bd8e771bcd3fe2568299b94838b5b-3000x3000.png?auto=format&q=75&url=https://cdn.sanity.io/images/4t60hegj/production/64372ed7017bd8e771bcd3fe2568299b94838b5b-3000x3000.png&w=1400" alt="" />
 
-                                <div class="p-6 bg-darkOlive text-ivory">
-                                    <h1 class="font-serifs text-xl text-center mb-3">
-                                        Coffee Beans
+                                <div class="p-6 font-serifs bg-darkOlive text-ivory text-center">
+                                    <h1 class="text-xl mb-2">
+                                        Guatemala Ayarza Natural
                                     </h1>
+                                    <span className='text-xl block'>
+                                        $25
+                                    </span>
                                 </div>
                             </div>
                         </div>
