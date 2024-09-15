@@ -1,6 +1,6 @@
 import React from 'react'
 import logoWhite from '../../images/white.png'
-import lumiCoffee from '../../images/Lumi.png'
+// import lumiCoffee from '../../images/Lumi.png'
 
 function FeaturedProductsSection() {
     return (
@@ -54,7 +54,7 @@ function FeaturedProductsSection() {
                             <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
 
                                 {/* <img className='w-full  object-center' src="https://shop.phase-connect.com/cdn/shop/files/luminewcoffee_1776x1184.png?v=1715241054" alt="" /> */}
-                                <img src={lumiCoffee} alt="" />
+                                <img src="https://cdn.sanity.io/images/4t60hegj/production/64372ed7017bd8e771bcd3fe2568299b94838b5b-3000x3000.png?auto=format&q=75&url=https://cdn.sanity.io/images/4t60hegj/production/64372ed7017bd8e771bcd3fe2568299b94838b5b-3000x3000.png&w=1400" alt="" />
 
                                 <div class="p-6">
                                     <h1 class="font-serifs text-lg text-center mb-3">The Catalyzer</h1>
